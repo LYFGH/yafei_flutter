@@ -21,7 +21,9 @@ class App extends StatelessWidget {
       home: TwoPage(),
       theme: ThemeData(
         // primaryColor: Colors.yellow,
-        primarySwatch: Colors.yellow
+        primarySwatch: Colors.yellow,
+        highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
+        splashColor: Colors.white70
       ),
     );
   }
