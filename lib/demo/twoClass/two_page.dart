@@ -31,7 +31,17 @@ class TwoPage extends StatelessWidget {
               },
             ),
             ],
-            bottom: TabbarDemo(),
+            bottom: TabBar(
+                unselectedLabelColor: Colors.black38,
+                indicatorColor: Colors.black54,
+                indicatorSize: TabBarIndicatorSize.label,
+                indicatorWeight: 1.0,
+                tabs: <Widget>[
+                    Tab(icon: Icon(Icons.local_florist),),
+                    Tab(icon: Icon(Icons.change_history),),
+                    Tab(icon: Icon(Icons.directions_bike),),
+                ],      
+            ),
           ),
           
           body: TabbarViewDemo(),
@@ -44,22 +54,6 @@ class TwoPage extends StatelessWidget {
   }
 }
 
-class TabbarDemo extends TabBar {
-  @override
-  Widget build(BuildContext context) {
-    return TabBar(
-        unselectedLabelColor: Colors.black38,
-        indicatorColor: Colors.black54,
-        indicatorSize: TabBarIndicatorSize.label,
-        indicatorWeight: 1.0,
-        tabs: <Widget>[
-            Tab(icon: Icon(Icons.local_florist),),
-            Tab(icon: Icon(Icons.change_history),),
-            Tab(icon: Icon(Icons.directions_bike),),
-        ],      
-    );
-  }
-}
 class TabbarViewDemo extends StatelessWidget {
   
   @override
