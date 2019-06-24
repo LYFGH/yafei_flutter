@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'demo/one_page.dart';
-import 'demo/two_page.dart';
+import 'demo/oneClass/one_page.dart';
+import 'demo/twoClass/two_page.dart';
 
 
 
