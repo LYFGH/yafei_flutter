@@ -8,7 +8,7 @@ import 'demo/view_demo/gridview.dart';
 import 'demo/sliver_demo/sliver_index.dart';
 import 'demo/route_demo/route_index.dart';
 import 'demo/route_demo/easyroute.dart';
-
+import 'demo/form_demo/form_index.dart';
 void main(){
 
 
@@ -32,11 +32,13 @@ class App extends StatelessWidget {
       ),
       //定义路由
       //根路由
-      initialRoute: '/',
+      initialRoute: '/form',
       routes: {
         '/':(context) => EasyRouteDemo(),
         //设置根,初始路由
-        '/about':(context) => AboutSubView(title: 'About',)
+        '/about':(context) => AboutSubView(title: 'About',),
+        //form
+        '/form':(context) => FormIndexpage(),
       },
 
 
