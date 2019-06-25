@@ -9,6 +9,10 @@ import 'demo/sliver_demo/sliver_index.dart';
 import 'demo/route_demo/route_index.dart';
 import 'demo/route_demo/easyroute.dart';
 import 'demo/form_demo/form_index.dart';
+import 'demo/button_demo/button_index.dart';
+import 'demo_index.dart';
+
+
 void main(){
 
 
@@ -26,19 +30,23 @@ class App extends StatelessWidget {
       // home: EasyRouteDemo(),
       theme: ThemeData(
         // primaryColor: Colors.yellow,
-        primarySwatch: Colors.yellow,
+        primarySwatch: Colors.blue,
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
         splashColor: Colors.white70
       ),
       //定义路由
       //根路由
-      initialRoute: '/form',
+      initialRoute: '/index',
       routes: {
         '/':(context) => EasyRouteDemo(),
         //设置根,初始路由
         '/about':(context) => AboutSubView(title: 'About',),
         //form
         '/form':(context) => FormIndexpage(),
+        //button
+        '/button':(context) => ButtonIndexPage(),
+        //button
+        '/index':(context) => DemoIndexPage(),
       },
 
 

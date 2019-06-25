@@ -24,10 +24,10 @@ class TwoPage extends StatelessWidget {
             // ),
             actions: <Widget>[
               IconButton(
-              icon: Icon(Icons.search),
+              icon: Icon(Icons.backspace),
               tooltip: 'Search',
               onPressed: (){
-                debugPrint('点击了搜索');
+                Navigator.pop(context);
               },
             ),
             ],

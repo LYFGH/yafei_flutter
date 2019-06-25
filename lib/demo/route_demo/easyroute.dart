@@ -9,6 +9,12 @@ class EasyRouteDemo extends StatelessWidget {
     return Scaffold(
           appBar: AppBar(
             title: Text('Route'), 
+            leading: FlatButton(
+              child: Icon(Icons.navigate_before),
+              onPressed: () {
+                Navigator.pop(context);
+              },
+            ),
           ),
           body: ListViewDemo()
 
