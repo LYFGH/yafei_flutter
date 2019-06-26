@@ -9,8 +9,11 @@ import 'demo/route_demo/route_index.dart';
 import 'demo/route_demo/easyroute.dart';
 import 'demo/form_demo/form_index.dart';
 import 'demo/button_demo/button_index.dart';
-
-
+import 'demo/about_choose_demo/checkbox_demo.dart';
+import 'demo/about_choose_demo/radio_demo.dart';
+import 'demo/about_choose_demo/switch_demo.dart';
+import 'demo/about_choose_demo/slider_demo.dart';
+import 'demo/about_choose_demo/datetime_demo.dart';
 class DemoIndexPage extends StatelessWidget {
   const DemoIndexPage({Key key}) : super(key: key);
 
@@ -42,6 +45,14 @@ class DemoIndexDemo extends StatelessWidget {
           ListItem(title: "EasyRouteDemo",page: EasyRouteDemo()),
           ListItem(title: "FormIndexpage",page: FormIndexpage()),
           ListItem(title: "ButtonIndexDemo",page: ButtonIndexPage()),
+          ListItem(title: "CheckBoxDemo",page: CheckBoxDemo()),
+          ListItem(title: "RadioDemo",page: RadioDemo()),
+          ListItem(title: "SwitchDemo",page: SwitchDemo()),
+          ListItem(title: "SliderDemo",page: SliderDemo()),
+          ListItem(title: "DateTimeDemo",page: DateTimeDemo()),
+
+
+
           // ListItem(title: "Stepper",page: StepperDemo()),
         ],
       ),
@@ -67,6 +78,35 @@ class ListItem extends StatelessWidget {
           MaterialPageRoute(builder: (context) => page),
         );
       },
+    );
+  }
+}
+
+
+class _widgetDemo extends StatelessWidget {
+  const _widgetDemo({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(''),
+        elevation: 0.0,
+      ),
+      body: Container(
+        padding: EdgeInsets.all(16.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                
+              ],
+            )
+          ],
+        ),
+      ),
     );
   }
 }
