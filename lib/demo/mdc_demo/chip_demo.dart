@@ -55,10 +55,12 @@ class _ChipDemoState extends State<ChipDemo> {
                   ),
                 ),
                 Chip(
+                  //标题,删除操作
                   label: Text('City'),
                   onDeleted: () {},
                   deleteIcon: Icon(Icons.delete),
                   deleteIconColor: Colors.redAccent,
+                  //长按提示
                   deleteButtonTooltipMessage: 'Remove this tag',
                 ),
                 Divider(
@@ -86,11 +88,12 @@ class _ChipDemoState extends State<ChipDemo> {
                 ),
                 Container(
                   width: double.infinity,
-                  child: Text('ActionChip: $_action'),
+                  child: Text('动作标签ActionChip: $_action'),
                 ),
                 Wrap(
                   spacing: 8.0,
                   children: _tags.map((tag) {
+                    //点按小标签
                     return ActionChip(
                       label: Text(tag),
                       onPressed: () {
@@ -108,11 +111,12 @@ class _ChipDemoState extends State<ChipDemo> {
                 ),
                 Container(
                   width: double.infinity,
-                  child: Text('FilterChip: ${_selected.toString()}'),
+                  child: Text('过滤标签FilterChip: ${_selected.toString()}'),
                 ),
                 Wrap(
                   spacing: 8.0,
                   children: _tags.map((tag) {
+                    //选中,左边出现对号
                     return FilterChip(
                       label: Text(tag),
                       selected: _selected.contains(tag),
@@ -135,11 +139,12 @@ class _ChipDemoState extends State<ChipDemo> {
                 ),
                 Container(
                   width: double.infinity,
-                  child: Text('ChoiceChip: $_choice'),
+                  child: Text('选择标签ChoiceChip: $_choice'),
                 ),
                 Wrap(
                   spacing: 8.0,
                   children: _tags.map((tag) {
+                    //一组里面选中一个,
                     return ChoiceChip(
                       label: Text(tag),
                       selectedColor: Colors.black,

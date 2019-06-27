@@ -22,6 +22,13 @@ import 'demo/dio_log_demo/alert_dialog_demo.dart';
 import 'demo/dio_log_demo/bottom_sheet_demo.dart';
 import 'demo/dio_log_demo/snackbar_demo.dart';
 import 'demo/dio_log_demo/expansion_panel_demo.dart';
+//碎片组件
+import 'demo/mdc_demo/chip_demo.dart';
+import 'demo/mdc_demo/data_table_demo.dart';
+import 'demo/mdc_demo/pageinate_data_table_demo.dart';
+import 'demo/mdc_demo/card_demo.dart';
+import 'demo/mdc_demo/stepper_demo.dart';
+
 
 class DemoIndexPage extends StatelessWidget {
   const DemoIndexPage({Key key}) : super(key: key);
@@ -44,26 +51,33 @@ class DemoIndexDemo extends StatelessWidget {
     return Container(
       child: ListView(
         children: <Widget>[
-          ListItem(title: "OnePage",page: OnePage()),
+          ListItem(title: "开始",page: OnePage()),
           ListItem(title: "TwoPage",page: TwoPage()),
-          ListItem(title: "LayoutDemo",page: LayoutDemo()),
-          ListItem(title: "ViewDemo",page: ViewDemo()),
-          ListItem(title: "GridViewDemo",page: GridViewDemo()),
-          ListItem(title: "SliverDemo",page: SliverDemo()),
-          ListItem(title: "RouteIndexPage",page: RouteIndexPage()),
-          ListItem(title: "EasyRouteDemo",page: EasyRouteDemo()),
-          ListItem(title: "FormIndexpage",page: FormIndexpage()),
-          ListItem(title: "ButtonIndexDemo",page: ButtonIndexPage()),
-          ListItem(title: "CheckBoxDemo",page: CheckBoxDemo()),
-          ListItem(title: "RadioDemo",page: RadioDemo()),
-          ListItem(title: "SwitchDemo",page: SwitchDemo()),
-          ListItem(title: "SliderDemo",page: SliderDemo()),
-          ListItem(title: "DateTimeDemo",page: DateTimeDemo()),
-          ListItem(title: "SimpleDialogDemo",page: SimpleDialogDemo()),
-          ListItem(title: "AlertDialogDemo",page: AlertDialogDemo()),
-          ListItem(title: "BottomSheetDemo",page: BottomSheetDemo()),
-          ListItem(title: "SnackBarDemo",page: SnackBarDemo()),
-          ListItem(title: "ExpansionPanelDemo",page: ExpansionPanelDemo()),
+          ListItem(title: "布局Layout",page: LayoutDemo()),
+          ListItem(title: "视图ViewDemo",page: ViewDemo()),
+          ListItem(title: "网格视图GridView",page: GridViewDemo()),
+          ListItem(title: "条目SliverDemo",page: SliverDemo()),
+          ListItem(title: "路径RouteIndexPage",page: RouteIndexPage()),
+          ListItem(title: "简单路径EasyRoute",page: EasyRouteDemo()),
+          ListItem(title: "表单FormIndexpage",page: FormIndexpage()),
+          ListItem(title: "按钮ButtonIndex",page: ButtonIndexPage()),
+          ListItem(title: "选择框CheckBox",page: CheckBoxDemo()),
+          ListItem(title: "单项选择RadioDemo",page: RadioDemo()),
+          ListItem(title: "选择SwitchDemo",page: SwitchDemo()),
+          ListItem(title: "滑动选择SliderDemo",page: SliderDemo()),
+          ListItem(title: "时间选择器DateTime",page: DateTimeDemo()),
+          ListItem(title: "对话框SimpleDialogDemo",page: SimpleDialogDemo()),
+          ListItem(title: "提示AlertDialogDemo",page: AlertDialogDemo()),
+          ListItem(title: "下部选项BottomSheet",page: BottomSheetDemo()),
+          ListItem(title: "下部提示SnackBar",page: SnackBarDemo()),
+          ListItem(title: "可扩展选项卡ExpansionPanel",page: ExpansionPanelDemo()),
+          ListItem(title: "标签Chip",page: ChipDemo()),
+          ListItem(title: "数据表格DataTable",page: DataTableDemo()),
+          ListItem(title: "分页数据表格PaginatedDataTable",page: PaginatedDataTableDemo()),
+          ListItem(title: "卡片式列表Card",page: CardDemo()),
+          ListItem(title: "分步式选项Stepper",page: StepperDemo()),
+
+
           // ListItem(title: "Stepper",page: StepperDemo()),
         ],
       ),
