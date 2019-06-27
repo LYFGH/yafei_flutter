@@ -8,12 +8,21 @@ import 'demo/sliver_demo/sliver_index.dart';
 import 'demo/route_demo/route_index.dart';
 import 'demo/route_demo/easyroute.dart';
 import 'demo/form_demo/form_index.dart';
+//按钮
 import 'demo/button_demo/button_index.dart';
+//选择器
 import 'demo/about_choose_demo/checkbox_demo.dart';
 import 'demo/about_choose_demo/radio_demo.dart';
 import 'demo/about_choose_demo/switch_demo.dart';
 import 'demo/about_choose_demo/slider_demo.dart';
 import 'demo/about_choose_demo/datetime_demo.dart';
+//提示框
+import 'demo/dio_log_demo/simple_dialog_demo.dart';
+import 'demo/dio_log_demo/alert_dialog_demo.dart';
+import 'demo/dio_log_demo/bottom_sheet_demo.dart';
+import 'demo/dio_log_demo/snackbar_demo.dart';
+import 'demo/dio_log_demo/expansion_panel_demo.dart';
+
 class DemoIndexPage extends StatelessWidget {
   const DemoIndexPage({Key key}) : super(key: key);
 
@@ -50,9 +59,11 @@ class DemoIndexDemo extends StatelessWidget {
           ListItem(title: "SwitchDemo",page: SwitchDemo()),
           ListItem(title: "SliderDemo",page: SliderDemo()),
           ListItem(title: "DateTimeDemo",page: DateTimeDemo()),
-
-
-
+          ListItem(title: "SimpleDialogDemo",page: SimpleDialogDemo()),
+          ListItem(title: "AlertDialogDemo",page: AlertDialogDemo()),
+          ListItem(title: "BottomSheetDemo",page: BottomSheetDemo()),
+          ListItem(title: "SnackBarDemo",page: SnackBarDemo()),
+          ListItem(title: "ExpansionPanelDemo",page: ExpansionPanelDemo()),
           // ListItem(title: "Stepper",page: StepperDemo()),
         ],
       ),
