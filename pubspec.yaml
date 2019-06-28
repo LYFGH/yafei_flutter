@@ -28,7 +28,8 @@ dependencies:
   intl: ^0.15.8
   #状态管理
   scoped_model: ^1.0.1
-
+  rxdart: ^0.18.1
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter

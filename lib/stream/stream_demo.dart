@@ -67,7 +67,7 @@ class _StreamDemoHomeState extends State<StreamDemoHome> {
   void onDataTwo(String data) {
     print('onDataTwo: $data');
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Container(
