@@ -11,7 +11,8 @@ import 'demo/route_demo/easyroute.dart';
 import 'demo/form_demo/form_index.dart';
 import 'demo/button_demo/button_index.dart';
 import 'demo_index.dart';
-
+import 'i18n/map/yf_demo_locations2.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main(){
 
@@ -28,6 +29,20 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'yafei_flutter',
       // home: EasyRouteDemo(),
+
+      localizationsDelegates: [
+        YFDemoLocalizationsDelegate(),
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      supportedLocales: [
+        Locale('en', 'US'),
+        Locale('zh', 'CN'),
+      ],
+
+
+
+
       theme: ThemeData(
         // primaryColor: Colors.yellow,
         primarySwatch: Colors.blue,
