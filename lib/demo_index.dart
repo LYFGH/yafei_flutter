@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yafei_flutter/statemanagement/state_management_demo.dart';
 import 'demo/oneClass/one_page.dart';
 import 'demo/twoClass/two_page.dart';
 import 'demo/layout_demo/layout_demo.dart';
@@ -76,6 +77,9 @@ class DemoIndexDemo extends StatelessWidget {
           ListItem(title: "分页数据表格PaginatedDataTable",page: PaginatedDataTableDemo()),
           ListItem(title: "卡片式列表Card",page: CardDemo()),
           ListItem(title: "分步式选项Stepper",page: StepperDemo()),
+          ListItem(title: "状态管理",page: StateManagementDemo()),
+
+          
 
 
           // ListItem(title: "Stepper",page: StepperDemo()),
