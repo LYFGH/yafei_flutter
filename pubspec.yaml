@@ -26,6 +26,8 @@ dependencies:
   cupertino_icons: ^0.1.2
   #时间
   intl: ^0.15.8
+  #状态管理
+  scoped_model: ^1.0.1
 
 dev_dependencies:
   flutter_test:
